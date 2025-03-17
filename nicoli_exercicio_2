@@ -1,0 +1,18 @@
+alert ("programa para saber se passou de ano");
+
+var primeiraNota = Number( prompt ("digite a nota do primeiro trimestre") );
+
+
+ var segundaNota = Number ( prompt ("digite a nota do segundo trimestre") );
+
+var terceiraNota =  Number ( prompt ("digite a nota do terceiro trimestre") );
+
+console.log (primeiraNota);
+console.log (segundaNota);
+console.log(terceiraNota);
+
+
+
+console.log ((primeiraNota + segundaNota + terceiraNota) /3)
+
+ alert (" sua media " + (primeiraNota + segundaNota + terceiraNota) /3)
