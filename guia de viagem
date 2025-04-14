@@ -1,0 +1,11 @@
+var viagem = (prompt ("digite a viagem desejada:") );
+console.log (viagem);
+alert ("viagem selecionada!")
+
+var nome = (prompt(" digite seu nome"));
+console.log(nome)
+alert ("nome salvo com sucesso!")
+
+var email = (prompt("digite seu email"));
+console.log(email)
+alert ("email salvo com sucesso!")
