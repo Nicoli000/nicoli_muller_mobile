@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Disciplina</h1>
+    <form id="cadastro_professor">
+       
+
+        <label for="email">email:</label>
+        <input type="text" id="email"><br>
+       
+
+        <label for="senha">senha:</label>
+        <input type="text" id="senha"><br>
+
+
+        <button type="submit" id="botao">Logar</button>        
+
+
+        <!-- <button type="submit" onclick="executar()">Enviar</button> -->
+    </form>    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+var meuFormulario = document.getElementById("cadastro_professor");
+meuFormulario.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+
+  //Pega o valor do input email e atribui para a
+  //variável email
+  var email = document.getElementById("email").value;
+
+  //Pega o valor do input senha e atribui para a
+  //variável senha
+  var senha = Number(  document.getElementById("senha").value   );
+
+
+
+  if ( email == "email@hotmail.com" &&
+       senha === 123 ) {
+
+    console.log("email correto");
+
+  } else {
+
+    alert("Olha, você digitou seu email errado, tente novamente");
+    console.log("email errado");
+  }
+
+});
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Estilos do formulário */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    form {
+      max-width: 90%;
+    }
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input[type="text"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
